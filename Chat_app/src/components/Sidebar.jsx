@@ -7,6 +7,7 @@ import AddCircleIcon from '@mui/icons-material/AddCircle';
 import NightlightIcon from '@mui/icons-material/Nightlight';
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
 import ConversationItem from './ConversationItem';
+import ChatArea from './ChatArea';
 
 
 function Sidebar() {
@@ -65,8 +66,8 @@ function Sidebar() {
         <div className='sb-conversations'>
             {
                 conversations.map((conversation) => {
-                   return <ConversationItem props={conversation}/>
-                })
+                   return  <ConversationItem props={conversation} key={conversation.name}/>
+                })   
             }
         </div>
     </div>
