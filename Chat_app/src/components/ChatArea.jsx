@@ -2,6 +2,7 @@ import { IconButton } from '@mui/material'
 import React from 'react'
 import './myStyles.css';
 import DeleteIcon from '@mui/icons-material/Delete';
+import SendIcon from '@mui/icons-material/Send';
 
 function ChatArea({props}) {
   return (
@@ -20,7 +21,12 @@ function ChatArea({props}) {
 
         <div className='messages-container'>messages-container</div>
 
-        <div className='text-input-area'>text-nput-area</div>
+        <div className='text-input-area'>
+            <input placeholder='type a message' className='search-box' />
+            <IconButton>
+              <SendIcon/>
+            </IconButton>
+        </div>
     </div>
   )
 }

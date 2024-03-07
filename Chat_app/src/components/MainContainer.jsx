@@ -24,7 +24,6 @@ function MainContainer() {
     },
 ])
 
-
   return (
     <div className='main-container'>
       <Sidebar/>

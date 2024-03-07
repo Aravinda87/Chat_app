@@ -24,7 +24,7 @@
 .sb-search{
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 5px 10px;
     padding: 5px 5px;
     background-color: white;
     border-radius: 20px;
@@ -116,10 +116,18 @@
 }
 
 .messages-container{
-    background-color: aquamarine;
+    background-color: white;
+    padding: 10px 10px;
+    margin: 2px 10px;
+    border-radius: 20px;
     flex: 1;
 }
 
 .text-input-area{
-    background-color: yellow;
+    background-color: white;
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
 }
