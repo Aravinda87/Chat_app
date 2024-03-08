@@ -30,8 +30,8 @@ function MainContainer() {
     <div className='main-container'>
       <Sidebar/>
       {/* <Welcome/> */}
-      <CreateGroups/>
-      {/* <ChatArea props={conversations[0]}/> */}
+      {/* <CreateGroups/> */}
+      <ChatArea props={conversations[0]}/>
       </div>
   )
 }

@@ -9,7 +9,6 @@ function CreateGroups() {
           <IconButton>
             <DoneOutlineIcon/>
           </IconButton>
-    
     </div>
   )
 }

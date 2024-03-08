@@ -20,6 +20,7 @@
     padding: 10px 5px;
     background-color: white;
     border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .sb-search{
     display: flex;
@@ -28,6 +29,7 @@
     padding: 5px 5px;
     background-color: white;
     border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .search-box{
     outline-width:0 ;
@@ -41,6 +43,7 @@
     padding: 5px 10px;
     margin: 10px;
     flex: 1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .conversation-container{
     display: grid;
@@ -108,6 +111,7 @@
     padding: 10px 10px;
     margin: 10px;
     border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .header-text{
@@ -124,6 +128,7 @@
     border-radius: 20px;
     flex: 1;
     overflow: scroll;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .messages-container::-webkit-scrollbar{
@@ -137,6 +142,7 @@
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .other-text-content{
@@ -204,4 +210,40 @@
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
+}
+
+.login-container{
+    height: 90vh;
+    width: 90vw;
+    background-color: #f4f5f8;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.image-container{
+    flex: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box{
+    flex: 0.7;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+    color: #63d7b0;
+    font-family: "segoe UI", tahoma,Geneva,Verdana,sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logintext{
+    font-size: 30px;
+    padding-bottom: 20px;
 }

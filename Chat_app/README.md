@@ -3,7 +3,7 @@
 3. sidebar
 4. main chat area
 5. main chat area
-6. login - welcome - create groups
+6. login - welcome - creategroups
 7. online users ,available groups
 8. routing
 9. toggle - redux
