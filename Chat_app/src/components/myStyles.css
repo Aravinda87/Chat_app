@@ -247,3 +247,49 @@
     font-size: 30px;
     padding-bottom: 20px;
 }
+
+.list-container{
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+}
+
+.ug-header{
+    background-color: white;
+    border-radius: 20px;
+    padding: 12px 5px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.ug-list{
+    flex: 1;
+    overflow: scroll;
+    scrollbar-width: none;
+    padding: 10px;
+}
+
+.ug-list::-webkit-scrollbar{
+    display: none;
+}
+
+.list-tem{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 5px;
+    margin: 10px;
+    transition-duration: 0.5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.list-tem:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+.list-tem:active{
+    background-color: white;
+}
