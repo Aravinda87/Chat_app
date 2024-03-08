@@ -8,6 +8,7 @@ import NightlightIcon from '@mui/icons-material/Nightlight';
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
 import ConversationItem from './ConversationItem';
 import ChatArea from './ChatArea';
+import { useNavigate } from 'react-router-dom';
 
 
 function Sidebar() {
@@ -30,6 +31,8 @@ function Sidebar() {
         },
     ])
 
+    const navigate = useNavigate()
+
   return (
     <div className='sidebar-container'>
         
@@ -41,13 +44,13 @@ function Sidebar() {
             </div>
 
             <div>
-                <IconButton>
+                <IconButton onClick={()=>{navigate("users")}}>
                     <PersonAddIcon/>
                 </IconButton>
-                <IconButton>
+                <IconButton onClick={()=>{navigate("groups")}}>
                     <GroupAddIcon/>
                 </IconButton>
-                <IconButton>
+                <IconButton onClick={()=>{navigate("create-groups")}}>
                     <AddCircleIcon/>
                 </IconButton>
                 <IconButton>

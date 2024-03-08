@@ -4,8 +4,7 @@ import { IconButton } from '@mui/material';
 import SearchSharpIcon from '@mui/icons-material/SearchSharp';
 import logo from '/messaging.png'
 
-
-function User_Groups() {
+function Groups() {
   return (
     <div className='list-container'>
         <div className='ug-header'>
@@ -13,7 +12,7 @@ function User_Groups() {
                 src={logo}
                 style={{height:"2rem",width:"2rem",padding:"0px 10px"}}
             />
-            <p className='ug-title'>online users</p>
+            <p className='ug-title'>online groups</p>
 
         </div>
         <div className='sb-search'>
@@ -25,55 +24,55 @@ function User_Groups() {
         <div className='ug-list'>
             <div className='list-tem'>
                 <p className='con-icon'>t</p>
-                <p className='con-title'>test user</p>
+                <p className='con-title'>test groups</p>
             </div>
             <div className='list-tem'>
                 <p className='con-icon'>t</p>
-                <p className='con-title'>test user</p>
+                <p className='con-title'>test groups</p>
             </div>
             <div className='list-tem'>
                 <p className='con-icon'>t</p>
-                <p className='con-title'>test user</p>
+                <p className='con-title'>test groups</p>
             </div>
             <div className='list-tem'>
                 <p className='con-icon'>t</p>
-                <p className='con-title'>test user</p>
+                <p className='con-title'>test groups</p>
             </div>
             <div className='list-tem'>
                 <p className='con-icon'>t</p>
-                <p className='con-title'>test user</p>
+                <p className='con-title'>test groups</p>
             </div>
             <div className='list-tem'>
                 <p className='con-icon'>t</p>
-                <p className='con-title'>test user</p>
+                <p className='con-title'>test groups</p>
             </div>
             <div className='list-tem'>
                 <p className='con-icon'>t</p>
-                <p className='con-title'>test user</p>
+                <p className='con-title'>test groups</p>
             </div>
             <div className='list-tem'>
                 <p className='con-icon'>t</p>
-                <p className='con-title'>test user</p>
+                <p className='con-title'>test groups</p>
             </div>
             <div className='list-tem'>
                 <p className='con-icon'>t</p>
-                <p className='con-title'>test user</p>
+                <p className='con-title'>test groups</p>
             </div>
             <div className='list-tem'>
                 <p className='con-icon'>t</p>
-                <p className='con-title'>test user</p>
+                <p className='con-title'>test groups</p>
             </div>
             <div className='list-tem'>
                 <p className='con-icon'>t</p>
-                <p className='con-title'>test user</p>
+                <p className='con-title'>test groups</p>
             </div>
             <div className='list-tem'>
                 <p className='con-icon'>t</p>
-                <p className='con-title'>test user</p>
+                <p className='con-title'>test groups</p>
             </div>
         </div>
     </div>
   )
 }
 
-export default User_Groups
+export default Groups
