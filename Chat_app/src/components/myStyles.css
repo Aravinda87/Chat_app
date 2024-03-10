@@ -1,3 +1,16 @@
+.dark{
+    background-color: #2d3941 !important;
+    color: white;
+}
+
+.icon{
+    width: 1.25em !important;
+    height: 1.25em !important;
+}
+/* .backdark{
+
+} */
+
 .main-container{
     background-color: #f4f5f8;
     height: 90vh;
