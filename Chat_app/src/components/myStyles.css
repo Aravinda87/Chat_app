@@ -14,7 +14,7 @@
 .main-container{
     background-color: #f4f5f8;
     height: 90vh;
-    width: 150vh;
+    width: 90vw;
     display: flex;
     border-radius: 20px;
 }
@@ -313,3 +313,45 @@
 .list-tem:active{
     background-color: white;
 }
+
+@media only screen and (max-width : 40em) {
+    .sb-search{
+        display: none;
+    }
+    .sb-conversations{
+        display: none;
+    }
+    .sb-header{
+        flex-direction: column;
+        width: min-content;
+        flex: 1;
+        justify-content: flex-start;
+    }
+    .other-icons{
+        flex-direction: column;
+    }
+    .sidebar-container{
+        flex: 0.1;
+    }
+    .chatarea-container{
+        flex: 1;
+    }
+    .chatarea-container{
+        flex: 1;
+    }
+    .list-container{
+        flex: 1;
+    }
+    .creategroups-container{
+        flex: 1 ;
+    }
+}
+
+/* @media only screen and (max-width : 495px){
+    .image-container{
+        display: none;
+    }
+    .login-box{
+        flex: 1;
+    }
+} */

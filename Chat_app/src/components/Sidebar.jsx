@@ -14,9 +14,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import { toggleTheme } from '../features/themeSlice';
 
 function Sidebar() {
+
     const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const lighttheme = useSelector((state) => state.themeKey);
+
+    const dispatch = useDispatch();
+    
+    const lighttheme = useSelector((state) => state.themeKey);
 
     const [conversations,setconversation] = useState([
         {
@@ -30,7 +33,6 @@ function Sidebar() {
             timestamp : "today"
         },
         {
-
             name : "Test3",
             lastmessage : "lastmessage 3",
             timestamp : "today"
@@ -49,7 +51,7 @@ function Sidebar() {
                     />
                 </IconButton>
             </div>
-            <div>
+            <div className='other-icons'>
                 <IconButton onClick={()=>{navigate("users")}}>
                     <PersonAddIcon
                          className={"icon" + (lighttheme ? "" : " dark")}
