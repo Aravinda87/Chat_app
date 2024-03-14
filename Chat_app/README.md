@@ -13,13 +13,17 @@
 13. create node-js ,express-js
 14. creating schemas
 15. connect mongodb to server
+
 16. login & signup JWT &BCRYPT
 17. login & signup JWT &BCRYPT - 1
-18. integrate auth to frontend
+
+18. integrate auth to frontend 
 19. integrate auth to frontend - 1
+
 20. authentication middleware & fetch user
 21. create chat API
 22. implimentation the message route & add self
+
 23. integrate chat route to frontend 
 24. integrate message route to frontend - 1
 25. integrate socket
