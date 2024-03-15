@@ -10,8 +10,9 @@ const logincontroller = expressasynchandler (async (req,res) => {
     const {name,password} = req.body
     const user = userModel.findOne({name})
 
+    console.log("fetch user data",user)
+    console.log(await user.matchpassword(password))
     if (user && (await user.matchpassword(password))){
-
         res.json({
             _id : user._id ,
             name : user.name,
@@ -25,9 +26,9 @@ const logincontroller = expressasynchandler (async (req,res) => {
         throw new Error("invalid username and password")
     }
 })
-     
 
 // registration
+
 const registercontroller = expressasynchandler (async (req,res) => {
 
     const {name,email,password} = req.body;
