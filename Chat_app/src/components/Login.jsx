@@ -6,7 +6,7 @@ import { Button, TextField  } from '@mui/material'
 function Login() {
   return (
     <div className='login-container'>
-        <div className='image-container'>
+        <div className='image-container'> 
             <img src={logo} alt="logo" className='welcome-logo'/>
         </div>
         <div className='login-box'>

@@ -1,25 +1,25 @@
 const express = require("express")
 const userModel = require("../models/userModel")
 const expressasynchandler = require("express-async-handler");
-const generateTokens = require("../config/generateTokens");
-
+const generateToken = require("../config/generateTokens");
 
 // login
 
 const logincontroller = expressasynchandler (async (req,res) => {
     const {name,password} = req.body
-    const user = userModel.findOne({name})
-
+    const user = await userModel.findOne({ name });
     console.log("fetch user data",user)
-    console.log(await user.matchpassword(password))
-    if (user && (await user.matchpassword(password))){
-        res.json({
-            _id : user._id ,
-            name : user.name,
-            email : user.email,
-            isAdmin : user.isAdmin,
-            token : generateTokens(user._id) 
-        });
+    console.log(await user.matchPassword(password));
+    if (user && (await user.matchPassword(password))) {
+        const response = {
+            _id: user._id,
+            name: user.name,
+            email: user.email,
+            isAdmin: user.isAdmin,
+            token: generateToken(user._id),
+          };
+        console.log(response);
+        res.json(response);
     }
     else{
         res.status(400)
@@ -58,7 +58,7 @@ const registercontroller = expressasynchandler (async (req,res) => {
             name : user.name,
             email : user.email,
             isAdmin : user.isAdmin,
-            token : generateTokens(user._id) 
+            token : generateToken(user._id) 
         });
     }
     else{
